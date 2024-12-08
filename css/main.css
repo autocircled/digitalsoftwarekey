@@ -1,0 +1,56 @@
+:root {
+    --wd-header-el-font-size: 12px;
+}
+
+.whb-sticked .whb-header-bottom .wd-dropdown:not(.sub-sub-menu) {
+    margin-top: 0px;
+}
+.whb-header-bottom .wd-dropdown {
+    margin-top: 0px !important;
+}
+.tic-faqs button.accordion {
+    justify-content: flex-start;
+}
+.wd-nav-main .menu-item {
+    border-right: 1px solid #ffffff6b;
+    transition: all 0.1s ease;
+}
+.wd-nav-main .menu-item:hover{
+	padding: 0 !important;
+}
+.wd-dropdown-menu.wd-design-full-width {
+    box-shadow: 0 3px 10px -2px #00000057;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+.wd-header-nav {
+    height: 100%;
+}
+
+.wd-nav {
+    --nav-gap: 0px !important;
+    height: 100%;
+}
+
+.wd-nav.wd-style-separated>li:not(:last-child):after{
+	display: none;
+}
+
+.wd-nav-main a.woodmart-nav-link {
+    padding: 0 15px;
+    cursor: pointer;
+}
+.whb-sticked .whb-header-bottom .wd-dropdown:not(.sub-sub-menu) {
+    margin-top: 0px;
+}
+.wd-dropdown-menu.wd-design-full-width:not(.wd-scroll),
+.wd-dropdown-menu.wd-design-full-width.wd-scroll .wd-dropdown-inner {
+    padding-top: 10px;
+}
+.wd-nav-main .elementor-widget-container > img {
+    height: 78px;
+    width: auto;
+}
+.wd-nav-main .elementor-widget:not(:last-child) {
+    margin-block-end: 10px;
+}
