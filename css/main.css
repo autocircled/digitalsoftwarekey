@@ -51,6 +51,16 @@
     height: 78px;
     width: auto;
 }
+.wd-nav-main .dsk-full .elementor-widget-container > img {
+    height: auto;
+}
 .wd-nav-main .elementor-widget:not(:last-child) {
     margin-block-end: 10px;
+}
+.xoo-cp-container span.xoo-cp-close {
+    color: #e7510e;
+}
+.xoo-cp-container a.xcp-btn {
+    background-color: #e7510e;
+    border-color: #e7510e;
 }

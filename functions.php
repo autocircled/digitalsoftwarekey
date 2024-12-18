@@ -2,14 +2,19 @@
 /**
  * Enqueue script and styles for child theme
  */
+define('DSK_VERSION', '1.1.2');
+$cache_buster = DSK_VERSION;
+if ( defined( 'WP_DEBUG' ) && WP_DEBUG) {
+  $cache_buster = date("YmdHi", filemtime( get_stylesheet_directory() . '/css/main.css'));
+}
 function woodmart_child_enqueue_styles() {
-	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'woodmart-style' ), woodmart_get_theme_info( 'Version' ) );
+  global $cache_buster;
+	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'woodmart-style' ), $cache_buster );
 }
 //add_action( 'wp_enqueue_scripts', 'woodmart_child_enqueue_styles', 10010 );
 
 function my_scripts_and_styles(){
-
-	$cache_buster = '1.0.2'; //date("YmdHi", filemtime( get_stylesheet_directory() . '/css/main.css')); //'1.0.0'
+  global $cache_buster;
 	wp_enqueue_style( 'main-style', get_stylesheet_directory_uri() . '/css/main.css', array( 'woodmart-style' ), $cache_buster, 'all' );
 
 }
